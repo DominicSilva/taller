@@ -1,0 +1,17 @@
+#videofondo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#logo{
+    margin-left: 2rem;
+}
+#menuhamburguesa{
+    margin-right: 50rem;
+}
+#barranavegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
