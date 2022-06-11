@@ -1,17 +1,21 @@
-#videofondo{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
+#videofondo video {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
 }
-#logo{
-    margin-left: 2rem;
+
+/* #cards {
+  display: flex;
+  justify-content: center;
+
+} */
+
+#btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 500px;
+  padding-right: 15px;
 }
-#menuhamburguesa{
-    margin-right: 50rem;
-}
-#barranavegacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+

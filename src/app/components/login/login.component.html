@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="container mt-5 text-light">
+  <h1 class="text-center">LOGIN</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="guardarlogin()" class="row g-3 mt-5 container d-flex justify-content-center align-items-center flex-column">
+        <div class="col-6">
+            <label for="correoContacto" class="form-label">Email</label>
+            <input type="email" class="form-control" formControlName="correo">
+            <span class="text-danger fw-bold" *ngIf="loginForm.get('correo')?.hasError('pattern')">Correo invalido</span>
+            <span class="text-danger fw-bold" *ngIf="loginForm.get('correo')?.hasError('required') && loginForm.get('correo')?.touched">Correo obligatorio</span>
+        </div>
+        <div class="col-6">
+            <label for="nombreContacto" class="form-label">Nombre</label>
+            <input type="text" class="form-control" formControlName="nombre">
+            <span class="text-danger fw-bold" *ngIf="loginForm.get('nombre')?.hasError('required') && loginForm.get('nombre')?.touched">Nombre invalido</span>
+        </div>
+        <div class="col-6">
+            <label for="edadContacto" class="form-label">Edad</label>
+            <input type="text" class="form-control" formControlName="edad">
+            <span class="text-danger fw-bold" *ngIf="loginForm.get('edad')?.hasError('pattern')">Edad invalida</span>
+            <span class="text-danger fw-bold" *ngIf="loginForm.get('edad')?.hasError('required') && loginForm.get('edad')?.touched">Edad obligatoria</span>
+        </div>
+        <div class="col-6">
+            <button type="submit" [disabled]="loginForm.invalid" class="btn btn-dark">Enviar</button>
+        </div>
+    </form>
+</div>

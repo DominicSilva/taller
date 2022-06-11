@@ -1,0 +1,31 @@
+<div class="text-light d-flex justify-content-center align-content-center py-5 flex-column">
+  <h1 class=" text-center">Adminisitración de datos</h1>
+  <h5 class="text-center">Contactos</h5>
+</div>
+
+<div class="container text-light">
+  <table *ngIf="listaContactos.length > 0" class="table table-striped table-responsive mb-5 text-light">
+      <thead class="">
+          <tr>
+              <th>correo</th>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th colspan="2">Acciones</th>
+          </tr>
+      </thead>
+      <tbody class="text-light">
+          <tr *ngFor="let contacto of listaContactos">
+              <td class="text-light">{{ contacto.correo}}</td>
+              <td class="text-light">{{ contacto.nombre }}</td>
+              <td class="text-light">{{ contacto.edad }}</td>
+              <td colspan="2">
+                  <i class="text-light fas fa-pen" [routerLink]="['/editar-registro',contacto._id]"></i>
+                  <i class="text-light fas fa-trash" (click)="eliminarContacto(contacto._id)"></i>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+  <h1 *ngIf="listaContactos.length == 0">No hay contactos registrados</h1>
+
+</div>

@@ -1,0 +1,48 @@
+#imgfondo img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.pic img {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.card {
+  margin-top: 160px;
+  background: rgba(0, 0, 0, 0.8);
+  ;
+}
+
+.card img {
+  justify-content: center;
+  width: 350px;
+  justify-content: center;
+}
+
+.pic{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-right: 450px;
+}
+
+.pic2{
+  display: flex;
+  justify-content: center;
+  margin-left: 400px;
+}
+
+.pic2 img {
+  width: 450px;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}

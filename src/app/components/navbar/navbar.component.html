@@ -10,16 +10,19 @@
         <div class="collapse navbar-collapse container" id="barranavegacion navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">INFO</a>
+                    <a class="nav-link" [routerLink]="['info']">INFO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">LOGIN</a>
+                    <a class="nav-link" [routerLink]="['login']">LOGIN</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">REGISTRO</a>
+                    <a class="nav-link" [routerLink]="['registro']">REGISTRO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTO</a>
+                    <a class="nav-link" [routerLink]="['contacto']">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['tabla']">ADMINISTRACION</a>
                 </li>
                 <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                     <ul class="navbar-nav">
@@ -38,7 +41,7 @@
                 </div>
             </ul>
             <form class="d-flex">
-                <button class="btn btn-outline-light" type="submit">JUGAR AHORA</button>
+                <button class="btn btn-outline-light" type="submit">JUEGA GRATIS</button>
             </form>
         </div>
     </div>

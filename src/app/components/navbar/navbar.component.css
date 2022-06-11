@@ -1,0 +1,11 @@
+#logo{
+  margin-left: 2rem;
+}
+#menuhamburguesa{
+  margin-right: 50rem;
+}
+#barranavegacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
